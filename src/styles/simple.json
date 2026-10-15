@@ -1,0 +1,11 @@
+{
+  "name": "simple",
+  "description": "Clean sans-serif typography and compact margins",
+  "font": "Helvetica",
+  "font_size": 11,
+  "line_height": 1.35,
+  "heading_color": "#23405C",
+  "heading_sizes": [22, 17, 14, 12, 11, 10],
+  "page_format": "A4",
+  "margins": {"left": 18, "right": 18, "top": 18, "bottom": 18}
+}

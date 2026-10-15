@@ -1,0 +1,11 @@
+{
+  "name": "professional",
+  "description": "LaTeX-inspired serif typography, generous margins, restrained headings",
+  "font": "Times",
+  "font_size": 11,
+  "line_height": 1.45,
+  "heading_color": "#202020",
+  "heading_sizes": [24, 18, 14, 12, 11, 10],
+  "page_format": "A4",
+  "margins": {"left": 25, "right": 25, "top": 22, "bottom": 22}
+}
