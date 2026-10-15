@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "markdown-to-pdf-cli"
+version = "0.1.0"
+description = "Markdown to professional, styled PDFs without a LaTeX installation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["markdown-it-py>=3,<5", "fpdf2>=2.8.3,<3", "pydantic>=2.10,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pypdf>=5"]
+
+[project.scripts]
+md2pdf = "markdown_to_pdf.cli:main"
+
+[project.gui-scripts]
+md2pdf-ui = "markdown_to_pdf.ui:main"
+
+[tool.setuptools]
+package-dir = {markdown_to_pdf = "src"}
+packages = [
+  "markdown_to_pdf",
+  "markdown_to_pdf.parser",
+  "markdown_to_pdf.styles",
+  "markdown_to_pdf.ui",
+  "markdown_to_pdf.utils",
+]
+
+[tool.setuptools.package-data]
+markdown_to_pdf = ["styles/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
